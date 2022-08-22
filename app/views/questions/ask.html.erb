@@ -1,0 +1,12 @@
+<h1>ASK YOUR QUESTION</h1>
+
+<form action="answer" method="get" data-turbo="false" class="form-group"> <%# action --> go to the answer page? %>
+  <label for="your-question" class="mb-3">Your Question:</label>
+  <input type="text" class="form-control mb-3" id="your-question" placeholder="Type here.." name="question"> <%# name attributes sets the key of the corresponding parameter  %>
+  <button type="submit" class="btn btn-primary mb-2">Ask!</button>
+</form>
+
+<br>
+<br>
+
+<%= link_to("ANSWER PAGE", answer_path) %>
